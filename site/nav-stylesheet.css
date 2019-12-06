@@ -1,0 +1,54 @@
+body {
+    margin:0px;
+
+}
+
+
+nav {
+    color:white;
+    background-color: rgb(41, 40, 40);
+    margin: none;
+    border:none ;
+    padding:none;
+}
+
+.nav-bar{
+    height: 60px;
+}
+
+
+.nav-bar > div{
+    
+    display: inline-block;
+    padding: 10px;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);    
+
+}
+
+.logo:hover {
+    color:gray;
+    
+}
+.logo{ 
+    
+    padding: 10px;
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+section > article{ 
+    color:green;
+}
+
+.naruto{ 
+    color:red;
+}
+
+.naruto aside{
+    color:brown;
+}

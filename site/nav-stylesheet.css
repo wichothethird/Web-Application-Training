@@ -6,7 +6,7 @@ body {
 
 nav {
     color:white;
-    background-color: rgb(41, 40, 40);
+    background-color: rgb(47, 49, 54);
     margin: none;
     border:none ;
     padding:none;
@@ -17,38 +17,52 @@ nav {
 }
 
 
-.nav-bar > div{
+.account{
+    float:right;
+}
+
+
+
+
+.nav-bar div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     display: inline-block;
     padding: 10px;
 
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);    
+
 
 }
 
-.logo:hover {
+.logo:hover, .profile:hover, .dashboard:hover, .tickets:hover, .account:hover{
     color:gray;
     
 }
+
 .logo{ 
     
     padding: 10px;
 
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
 
 }
 section > article{ 
     color:green;
 }
 
-.naruto{ 
-    color:red;
+.search{
+
+
 }
 
-.naruto aside{
-    color:brown;
+.search-bar{
+    border-radius: 5px;
+    height: 25px;
+    width: 80%;
+    display:inline-block;
+
+}
+
+.left-nav{
+    float:right;
+    
 }

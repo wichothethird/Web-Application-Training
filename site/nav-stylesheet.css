@@ -1,57 +1,32 @@
-body {
+* {
     margin:0px;
-
 }
 
 
-nav {
+
+.nav-bar{
     color:white;
-    background-color: rgb(47, 49, 54);
+    background-color: rgb(41, 51, 73);
     margin: none;
     border:none ;
     padding:none;
 }
 
-.nav-bar{
-    height: 60px;
-}
-
-
-.account{
-    float:right;
-}
-
-
-
 
 .nav-bar div{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
     display: inline-block;
-    padding: 10px;
-
-
-
+    padding: 10px ;   
 }
+
 
 .logo:hover, .profile:hover, .dashboard:hover, .tickets:hover, .account:hover{
-    color:gray;
-    
+    color:rgb(194, 194, 194);  
 }
 
-.logo{ 
-    
-    padding: 10px;
-
-
-}
-section > article{ 
-    color:green;
-}
 
 .search{
-
-
+    width: 70%;
 }
 
 .search-bar{
@@ -59,10 +34,11 @@ section > article{
     height: 25px;
     width: 80%;
     display:inline-block;
-
+    background-color: rgb(255, 255, 255);
+    border-width: 0ch;
+ 
+}
+*:focus {
+    outline: none;
 }
 
-.left-nav{
-    float:right;
-    
-}

@@ -45,7 +45,9 @@ query and a call back funtion that returns an error, result and fields.
 app.get('/createTable', (req, res) =>{
 
 
-    /* INSERT INTO `users` (`id`, `username`, `password`) VALUES ('1', 'wichothethird', '1234'); */
+    /* INSERT INTO `users` (`id`, `username`, `password`) VALUES ('1', 'wichothethird', '1234'); 
+        CREATE TABLE users(id int AUTO_INCREMENT, username VARCHAR(255), password VARCHAR(255), PRIMARY KEY (id))
+    */
     let sql = 'CREATE TABLE users(id int AUTO_INCREMENT, username VARCHAR(255), password VARCHAR(255), PRIMARY KEY (id))';
     connection.query(sql,(err,result)=>{
         if (err) {
@@ -56,7 +58,29 @@ app.get('/createTable', (req, res) =>{
     });
     
 });
- 
-app.listen(3000)
+
+/*Get all the users  */
+
+app.get('/showusers', (req, res) =>{
+
+    let sql = 'SELECT * FROM users';
+    connection.query(sql,(err,result)=>{
+        if (err) {
+            throw err;
+            return;
+        }
+        
+        res.send(result);
+        console.log(result);
+        var string = JSON.stringify(result);
+        console.log('>> string: ', string );
+        var json =  JSON.parse(string);
+        console.log('>> json: ', json);   
+        console.log(json[0].username) 
+    });
+    
+});
+
+app.listen(3000);
 
 console.log('Wicho web application');

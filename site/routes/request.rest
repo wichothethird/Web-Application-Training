@@ -1,0 +1,37 @@
+GET http://localhost:3000/Users
+
+###
+
+POST http://localhost:3000/Users
+Content-Type: application/json
+
+{
+    "name":"Wicho",
+    "password":"12345"
+}
+
+###
+GET http://localhost:3000/createTicketObject
+
+
+###
+POST http://localhost:3000/createTicket
+Content-Type: application/json
+
+{
+  "category":"Car-Coupe",
+  "lastModifiedBy":"Julio Marquez",
+  "model":"Honda Civic SI",
+  "status":"In Progress",
+  "dateCreate": "2018-04-23T18:25:43.511Z",
+  "lastModified": "2019-04-23T18:25:43.511Z",
+  "createdby":"Jose Luis Vargas",
+  "targetPrice":"20000.00",
+  "totalInvestment":"5012.34",
+  "image":null,
+  "condit":"Excellent",
+  "milage":60130,
+  "manifactureYear":2001,
+  "seats":4,
+  "description":"The Cars entered the auto-shop selvage"   
+}
